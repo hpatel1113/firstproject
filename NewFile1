@@ -1,9 +1,0 @@
- @Test
-    fun allowCustomTipOptionIsEnabledByDefault(){
-        val tipSettings = TipSettings(TipOption.ON_SCREEN, listOf(),  onScreenTipPresetsPercent = true, onScreenCalculatedAmounts = true)
-        mockTipSettings(tipSettings)
-        val viewModel = TipOnScreenViewModel(mockTipsUseCase)
-
-        assertTrue(viewModel.allowCustomTip.value!!)
-        println(viewModel.allowCustomTip.value!!)
-    }
